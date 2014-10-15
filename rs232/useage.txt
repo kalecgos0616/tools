@@ -1,0 +1,6 @@
+get results for xor all hex code:
+
+useage:
+$ php hex_xor_cal.php \x01\x01\xCA\x60\x00\x03
+output:
+$y=9d
