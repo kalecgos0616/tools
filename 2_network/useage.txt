@@ -1,0 +1,4 @@
+set /etc/hosts:
+10.21.2.12 lan_domain.com
+
+# perl 114_nameserver.pl
