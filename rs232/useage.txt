@@ -1,6 +1,21 @@
 get results for xor all hex code:
 
 useage:
-$ php hex_xor_cal.php \x01\x01\xCA\x60\x00\x03
+$ php generate_bcc.php \x01\x02\xCA\x60\x81\x00\x00
 output:
-$y=9d
+Array
+(
+    [0] => generate_bcc.php
+    [1] => x01x02xCAx60x81x00x00
+)
+Array
+(
+    [0] => 01
+    [1] => 02
+    [2] => CA
+    [3] => 60
+    [4] => 81
+    [5] => 00
+    [6] => 00
+)
+$y=28
