@@ -12,6 +12,7 @@ my $all_config = "";
 while ( my $row =  <$fh> ){
 	@arr = split(",",$row);	
 	for my $domain (@arr){
+		$domain =~ s/\*?$/*/;
 		$temp = $config_template;
 		$temp =~ s/domain/$domain/g;
 		$all_config .= $temp;
@@ -19,4 +20,4 @@ while ( my $row =  <$fh> ){
 }
 $all_config =~ s/,$//;	# remove last "."
 print "{\"patterns\":[$all_config]}";
-print "\n";
+#print "\n";
