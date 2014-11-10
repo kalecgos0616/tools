@@ -78,11 +78,11 @@ $rangs = array(
 foreach($rangs as $rang)
 {
 	// wire model
-	echo `route add -net 10.21.{$rang[0]}.0 netmask 255.255.252.0 gw 10.21.40.10`;
-	echo "route add -net 10.21.{$rang[0]}.0 netmask 255.255.252.0 gw 10.21.40.10";
+	//echo `route add -net 10.21.{$rang[0]}.0 netmask 255.255.252.0 gw 10.21.40.10`;
+	//echo "route add -net 10.21.{$rang[0]}.0 netmask 255.255.252.0 gw 10.21.40.10";
 	// wireless AP model
-//	echo `route add -net 10.21.{$rang[0]}.0 netmask 255.255.252.0 gw 192.168.0.1`;
-//	echo "route add -net 10.21.{$rang[0]}.0 netmask 255.255.252.0 gw 192.168.0.1";
+	echo `route add -net 10.21.{$rang[0]}.0 netmask 255.255.252.0 gw 192.168.0.1`;
+	echo "route add -net 10.21.{$rang[0]}.0 netmask 255.255.252.0 gw 192.168.0.1";
 
 	echo "\n";
 }
